@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useNavigate} from 'react-router-dom'
+import {API_URL} from "./config"
 const Create = () => {
 
     const [title, setTitle] = useState('');
@@ -16,7 +17,7 @@ const Create = () => {
 
         setIsPending(true);
 
-        fetch('http://localhost:5000/blogs', {
+        fetch(`${API_URL}/blogs`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

@@ -2,9 +2,10 @@ import { useState } from 'react';
 import BlogList from './BlogList';
 import SelectAuthorFilter from './SelectAuthorFilter';
 import useFetch from './useFetch';
+import {API_URL} from "./config"
 
 const Home = () => {
-    const blogsLocation = "http://localhost:5000/blogs"
+    const blogsLocation = `${API_URL}/blogs`
     const {data: blogs, isPending, error} = useFetch(blogsLocation);
     
     const [selectedAuthor, setSelectedAuthor] = useState("");
