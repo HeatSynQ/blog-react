@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import Home from "./Home"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
 import NotFound from "./NotFound";
@@ -8,7 +8,7 @@ import NotFound from "./NotFound";
 function App() {
 
   return (
-    <Router >
+    <Router>
       <div className="App">
           <NavBar />
           <div className="content">

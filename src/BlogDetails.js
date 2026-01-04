@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
-import {API_URL} from "./config"
+import API_URL from "./config"
 
 
 const BlogDetails = () => {

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import BlogList from './BlogList';
 import SelectAuthorFilter from './SelectAuthorFilter';
 import useFetch from './useFetch';
-import {API_URL} from "./config"
+import API_URL from "./config"
 
 const Home = () => {
     const blogsLocation = `${API_URL}/blogs`
